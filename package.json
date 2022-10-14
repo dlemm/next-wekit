@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "clean": "del resources public \"data/*\" \"!data/storybook\"",
-    "precontent": "npm run clean",
     "predev": "npm run content",
     "content": "cssg fetch",
     "dev": "next dev",
