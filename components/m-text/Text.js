@@ -1,6 +1,6 @@
 const Text = (props) => {
   return (
-    <h2>M-Text</h2>
+    <h3>This is the M-Text module</h3>
   )
 }
 

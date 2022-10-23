@@ -1,1 +1,1 @@
-export { default } from './MText'
+export { default } from './Text'

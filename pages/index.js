@@ -1,14 +1,27 @@
 import { createClient } from 'contentful'
+import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Index(props) {
   const { allPages } = props
+  console.log("🚀 ~ file: index.js ~ line 7 ~ Index ~ allPages", allPages)
 
   return (
     <>
-      <h2>Stale while revalidate Test</h2>
+      <Head>
+        <title>next weKit</title>
+        <meta
+          name="description"
+          content="Proof-of-Concept: Netlify On-Demand Builders vs SSG on a NextJS app "
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <h2>Incremental Static Regeneration</h2>
       <ul>
         {allPages.map((page) => (
-          <li key={page.sys.id}>{page.fields.internal_name}</li>
+          <li key={page.sys.id}>
+            <Link href={page.fields.slug}>{page.fields.title}</Link>
+          </li>
         ))}
       </ul>
     </>

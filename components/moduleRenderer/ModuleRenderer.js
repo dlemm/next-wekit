@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../m-text";
 import List from "../m-list";
 import Stage from "../m-stage";
+import Hero from "../m-hero";
 
 const ModuleRenderer = ({module}) => {
 
@@ -12,6 +13,8 @@ const ModuleRenderer = ({module}) => {
       return <List />;
     case "m-text":
       return <Text />;
+    case "m-hero":
+      return <Hero />;
     case "m-stage":
       return <Stage />;
     default:
