@@ -7,7 +7,7 @@ export default function Page(props) {
     <>
       <h1>this is the {page.fields.title} page</h1>
 
-      {page.fields.content.map((module) => (
+      {page?.fields?.content && page.fields.content.map((module) => (
         <ModuleRenderer key={module.sys.id} module={module} />
       ))}
     </>
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
   })
 
   const { items } = pages
-  const paths = items.map((page) => ({
+  const paths = items.length && items?.map((page) => ({
     params: { slug: page.fields.slug },
   }))
 
