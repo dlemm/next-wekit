@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "../m-text";
 import List from "../m-list";
+import Stage from "../m-stage";
 
 const ModuleRenderer = ({module}) => {
 
@@ -11,6 +12,8 @@ const ModuleRenderer = ({module}) => {
       return <List />;
     case "m-text":
       return <Text />;
+    case "m-stage":
+      return <Stage />;
     default:
       console.warn(`${contentTypeId} is not yet implemented`);
       return null;
