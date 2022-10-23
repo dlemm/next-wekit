@@ -11,7 +11,7 @@ export default function Index(props) {
         <title>next weKit</title>
         <meta
           name="description"
-          content="Proof-of-Concept: Netlify On-Demand Builders vs SSG on a NextJS app "
+          content="Proof-of-Concept: Incremental Static Regeneration and wekit data model"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

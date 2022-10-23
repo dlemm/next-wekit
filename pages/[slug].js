@@ -6,7 +6,7 @@ export default function Page(props) {
   return (
     <>
       <h1>this is the {page.fields.title} page</h1>
-
+      <p>The following modules are rendered via a module renderer that allowes dynamic content on the pages.</p>
       {page?.fields?.content && page.fields.content.map((module) => (
         <ModuleRenderer key={module.sys.id} module={module} />
       ))}
