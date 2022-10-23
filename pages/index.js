@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 export default function Index(props) {
   const { allPages } = props
-  console.log("🚀 ~ file: index.js ~ line 7 ~ Index ~ allPages", allPages)
 
   return (
     <>
