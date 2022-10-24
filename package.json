@@ -13,7 +13,8 @@
     "contentful": "^9.2.5",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "contentful-import": "^8.5.0",

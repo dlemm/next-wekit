@@ -1,0 +1,35 @@
+.stage {
+}
+.media {
+  position: relative;
+  width: 50vw;
+  height: auto;
+}
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100vw;
+}
+
+.inner {
+  display: flex;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-left: 4rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+  &:after {
+    content: '> ';
+    margin-left: 0.5rem;
+  }
+}

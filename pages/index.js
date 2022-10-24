@@ -1,6 +1,9 @@
 import { createClient } from 'contentful'
 import Head from 'next/head'
 import Link from 'next/link'
+import Stage from '../components/m-stage/Stage'
+import stageImage from '../public/images/coffee.jpg'
+import styles from '../components/m-stage/Stage.module.scss'
 
 export default function Index(props) {
   const { allPages } = props
@@ -15,10 +18,13 @@ export default function Index(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h2>Incremental Static Regeneration</h2>
-      <ul>
+      <Stage
+        headline="Incremental Static Regeneration"
+        image={stageImage}
+      ></Stage>
+      <ul className={styles.list}>
         {allPages.map((page) => (
-          <li key={page.sys.id}>
+          <li key={page.sys.id} className={styles.listItem}>
             <Link href={page.fields.slug}>{page.fields.title}</Link>
           </li>
         ))}
