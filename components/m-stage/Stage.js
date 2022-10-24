@@ -11,6 +11,8 @@ const Stage = ({ headline, image }) => {
             alt="Stage image"
             priority
             className={styles.image}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1400px) 50vw,"
           />
         </div>
         <div className="m-stage__headline">
