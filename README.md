@@ -31,10 +31,10 @@ I've tried to work with GraphQL and also with the [contentful-ssg](https://www.n
 
 ### To Dos
 
-[] Develop working modules like text or stage that is using data from Contenful
-[] Add more features that are already implemented in the wekit
-[] Add more modules
-[] Add more pages
-[] Add tests
-[] Add more documentation
-[] Test some Next.js 13 features
+- [] Develop working modules like text or stage that is using data from Contenful
+- [] Add more features that are already implemented in the wekit
+- [] Add more modules
+- [] Add more pages
+- [] Add tests
+- [] Add more documentation
+- [] Test some Next.js 13 features
