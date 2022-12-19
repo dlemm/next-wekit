@@ -23,7 +23,7 @@ To test the Incremental Static Regeneration feature run the development server o
 
 
 ### Module renderer
-In order to render the module based pages like it's used to be in the wekit setup I needed to have a module renderer that is reacting and dynamically stacking together the pages. It takes the `contentTypeId` of the module and renders the corresponding module located in the `components/modules` folder. 
+In order to render the module based pages like it's used to be in the wekit setup I needed to have a module renderer that is reacting and dynamically stacking together the pages. It takes the `contentTypeId` of the module and renders the corresponding module located in the `modules/` folder. 
 
 ### Building the pages
 I've tried to work with GraphQL and also with the [contentful-ssg](https://www.npmjs.com/package/@jungvonmatt/contentful-ssg)-package but this given setup now seems to work more easy and straight forward.
