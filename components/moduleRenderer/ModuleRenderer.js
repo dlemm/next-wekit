@@ -10,13 +10,13 @@ const ModuleRenderer = ({module}) => {
 
   switch (contentTypeId) {
     case "m-list":
-      return <List />;
+      return <List content={module} />
     case "m-text":
-      return <Text />;
+      return <Text content={module} />;
     case "m-hero":
-      return <Hero />;
+      return <Hero content={module} />
     case "m-stage":
-      return <Stage />;
+      return <Stage content={module} />
     default:
       console.warn(`${contentTypeId} is not yet implemented`);
       return null;
