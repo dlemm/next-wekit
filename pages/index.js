@@ -50,6 +50,6 @@ export async function getStaticProps() {
     props: {
       allPages: allPages,
     },
-    revalidate: 10,
+    revalidate: 5,
   }
 }

@@ -15,7 +15,7 @@ const Stage = ({ headline, image }) => {
               (max-width: 1400px) 50vw,"
           />
         </div>
-        <div className="m-stage__headline">
+        <div className={styles.headline}>
           <h1 className={styles.title}>{headline}</h1>
         </div>
       </div>

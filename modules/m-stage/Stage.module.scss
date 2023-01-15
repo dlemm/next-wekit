@@ -1,16 +1,24 @@
 .stage {
+  margin-bottom: 8rem;
 }
 .media {
   position: relative;
-  width: 50vw;
+  width: 100vw;
   height: auto;
+  
+  @media only screen and (min-width: 768px) {
+    width: 50vw;
+  }
 }
 .image {
   width: 100%;
   height: auto;
   max-width: 100vw;
 }
-
+.headline {
+  display: flex;
+  align-items: center;
+}
 .inner {
   display: flex;
   flex-direction: column;  
@@ -21,10 +29,15 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-left: 4rem;
+  margin-left: 2rem;
+  
+  @media only screen and (min-width: 768px) {
+    margin-left: 3rem;
+    font-size: 4rem;
+  }
 }
 
 .list {
